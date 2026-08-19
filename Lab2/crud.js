@@ -89,7 +89,7 @@ const main = async () => {
       case 1:
         let data = await cin.question("enter id , name,price,qty: ");
        let p= data.split(",");
-       
+       let q=p
 
         console.log(data);
 
