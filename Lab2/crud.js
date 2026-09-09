@@ -16,7 +16,7 @@ const getCart = async () => {
 const addToCart = async (item) => {
   const products = await getCart();
 
-  products.push(item);
+  const products.push(item);
 
   await saveCart(products);
 };
@@ -89,7 +89,7 @@ const main = async () => {
       case 1:
         let data = await cin.question("enter id , name,price,qty: ");
        let p= data.split(",");
-       let q=p
+       
 
         console.log(data);
 
