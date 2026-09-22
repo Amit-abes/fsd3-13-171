@@ -3,7 +3,7 @@ import {reviews} from "./data.js";
 const server = http.createServer((req, res) => {
   const products = {
     id: 1,
-    name: "Mobile",
+    name: "Mobile",f
     price: 25000,
     rating: 4.7,
     review: 225,

@@ -13,3 +13,7 @@ export const getallproducts =() => {
   products.push(item);
   return item;
  };
+
+ export const deleteproduct = (pid)=>{
+    const item = products
+ }
