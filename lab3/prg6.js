@@ -1,5 +1,5 @@
 import http from "http";
-import { getallproducts } from "./products.js";
+import { getallproducts,addproducts } from "./products.js";
 
 const server = http.createServer((req, res) => {
   if (req.url === "/api/v1/products" && req.method === "GET") {
@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
     const data = getallproducts();
   res.setHeader('content-type','application/json')
   
-    res.end(JSON.stringify({
+    res.end(JSON.stringify({msg:"product added", data:
       count:data.length,
       data,
     }),
