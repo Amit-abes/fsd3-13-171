@@ -26,7 +26,7 @@ export const deleteProduct = (pid) => {
   return true;
 };
 //create a function update any product given pid call this function in prg6.js amd verify its working by echo api
-export const updateProduct = (pid)=>{
+export const updateProduct = (pid, updateItem)=>{
   const item = products.findIndex((prd)=>prd.id ===pid);
   if(item==-1){
     return false;
