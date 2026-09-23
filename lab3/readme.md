@@ -20,4 +20,7 @@ package for npm
 - it also creates a folder node_modules automatically
 - node_modules holds the package/Library files
 - generally we ignore the node_modules by .gitignore
--
+Get- no parameter will pass to the server and he recevie all item
+post-add record we pass the value from body section in JSON formate of API tester
+Delete - to delete any product we pass parameter that is id of the product from url
+Update- we pass id from url and data to update from body
