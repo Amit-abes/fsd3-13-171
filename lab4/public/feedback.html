@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback | Bright Future Tuition</title><style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#172033;line-height:1.6}
+.navbar{background:#173b7a;color:white;padding:14px 6%;display:flex;align-items:center;justify-content:space-between;gap:20px;position:sticky;top:0;z-index:10}
+.logo{font-size:23px;font-weight:700;text-decoration:none;color:white}
+.nav-links{display:flex;flex-wrap:wrap;gap:18px;list-style:none}
+.nav-links a{color:white;text-decoration:none;font-weight:600;padding:7px 9px;border-radius:6px}
+.nav-links a:hover,.nav-links a.active{background:#2b62bd}
+.container{max-width:1050px;margin:45px auto;padding:0 20px}
+.hero{text-align:center;margin-bottom:28px}
+.hero h1{font-size:38px;color:#173b7a;margin-bottom:8px}
+.hero p{color:#5e6b7e}
+.card{background:white;border-radius:14px;padding:28px;box-shadow:0 8px 25px rgba(24,50,90,.08);margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.course,.price-card{background:white;padding:22px;border-radius:14px;box-shadow:0 7px 20px rgba(24,50,90,.08);border-top:4px solid #2b62bd}
+.course h3,.price-card h3{color:#173b7a;margin-bottom:8px}
+form{max-width:650px;margin:auto}
+label{display:block;font-weight:600;margin:13px 0 6px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ccd5e2;border-radius:8px;font-size:15px}
+textarea{min-height:130px;resize:vertical}
+button,.btn{display:inline-block;margin-top:18px;background:#173b7a;color:white;border:0;padding:12px 22px;border-radius:8px;cursor:pointer;text-decoration:none;font-weight:700}
+button:hover,.btn:hover{background:#2b62bd}
+.price{font-size:30px;color:#173b7a;font-weight:700;margin:10px 0}
+ul{padding-left:20px}
+.footer{background:#102c5b;color:#dce7f7;margin-top:60px;padding:30px 6%;text-align:center}
+.social{display:flex;justify-content:center;gap:18px;margin:15px 0}
+.social a{color:white;text-decoration:none;font-weight:600}
+.small{font-size:13px;color:#8090a5}
+@media(max-width:720px){.navbar{align-items:flex-start;flex-direction:column}.nav-links{gap:8px}.hero h1{font-size:30px}}
+</style></head>
+<body>
+
+<nav class="navbar">
+<a class="logo" href="courses.html">Bright Future Tuition</a>
+<ul class="nav-links">
+<li><a href="registration.html">Registration</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="prices.html">Prices</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+</ul>
+</nav>
+
+<main class="container">
+<div class="hero"><h1>Student Feedback</h1><p>Quality education, clear concepts and better results.</p></div>
+<div class="card"><form onsubmit="return submitFeedback()">
+<label>Name</label><input type="text" required placeholder="Your name">
+<label>Email</label><input type="email" required placeholder="Your email">
+<label>Rating</label><select required><option value="">Choose rating</option><option>5 - Excellent</option><option>4 - Very Good</option><option>3 - Good</option><option>2 - Needs Improvement</option><option>1 - Poor</option></select>
+<label>Your Feedback</label><textarea required placeholder="Tell us about your learning experience..."></textarea>
+<button type="submit">Submit Feedback</button></form></div>
+</main>
+
+<footer class="footer">
+<p><strong>Bright Future Tuition</strong></p>
+<div class="social">
+<a href="https://www.facebook.com/" target="_blank">● Facebook</a>
+<a href="https://www.instagram.com/" target="_blank">◎ Instagram</a>
+<a href="https://www.youtube.com/" target="_blank">▶ YouTube</a>
+<a href="https://www.linkedin.com/" target="_blank">in LinkedIn</a>
+</div>
+<p class="small">Learn Today • Lead Tomorrow | © 2026 Bright Future Tuition</p>
+</footer>
+
+
+<script>
+function registerUser(){ alert("Registration submitted successfully!"); return false; }
+function loginUser(){ alert("Login demo submitted. Connect a backend for real authentication."); return false; }
+function submitFeedback(){ alert("Thank you! Your feedback has been submitted."); return false; }
+</script>
+
+</body></html>
