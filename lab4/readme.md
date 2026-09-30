@@ -17,3 +17,18 @@
 
 8. send method /function is used to rewaard back contain to the client it may be html,json , html file , plain text
 b. we can also add status code with status function.it can function
+
+
+##map
+```
+array.map((item)=>{
+  return
+})
+array.map((item)=>())
+
+```
+map its function is used to iterate any  arrya it must return new array 
+
+exclude number of propertiy from any json object 
+
+too search any item in json array find method it will return null uncessful aur object sucesfull and  object sucessfull 
